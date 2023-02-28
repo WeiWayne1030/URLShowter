@@ -4,7 +4,7 @@ const Max = 61
 const min = 0
  
  let results = ''
-  for (let i = 1; i < 5; i++){
+  for (let i = 1; i <= 5; i++){
     const randomIndex = Math.floor(Math.random()*(Max-min+1)+ min)
     const radomWord = URLCode[randomIndex]
     results += radomWord
