@@ -4,9 +4,9 @@ const router = express.Router()
 const URL = require('../../models/URL')
 
 //完成製作短網址頁面
-router.get('/:results', (req, res) => {
-  const urlname = req.params.results
-  Link.find()
+router.get('/:url', (req, res) => {
+  const urlname = req.params.url
+  URL.find()
     .lean()
     .then(url => {
       const searchResult = url.find(l => l.name === urlname)
