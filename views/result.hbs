@@ -1,5 +1,17 @@
 <div class="result-description">
-  <h1>Success! Please use this Link:</h1>
-  <a class="copyText" href="{{result}}" target="_blank">{{result}}</a>
-  <button class="result-copy-button action">Copy</button>
+  <div class="container container mt-5 text-center">
+    <h2>Success! Please use this Link:</h2>
+    <a id="origin" class="copyText" href="{{result}}">{{result}}</a>
+    <div class="mt-2">
+      <button class="btn btn-success" onclick="copy()">Copy</button>
+        <script>
+          function copy() {
+              const origin = document.getElementById("origin")
+              navigator.clipboard.writeText(origin.innerText)
+                .then(() => alert("已複製"))
+                .catch(error => console.log(error))
+          }
+        </script>
+    </div>
+  </div>
 </div>

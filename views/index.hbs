@@ -1,9 +1,7 @@
-<!--  ./views/index.handlebars -->
 <form action="/generateURL" method="POST">
   <div class="container container mt-5 text-center">
-    <input type="url" name="url" placeholder="Input URL here" pattern="https?://.+" required />
-    <div class="invalid-feeback">
-      請填寫正確的網址格式
+    <input class="form-control" type="url" name="url" placeholder="Input URL here" pattern="https?://.+" required />
+    <div class="mt-2">
+      <button class="btn btn-primary shorten" type="submit">Shorten</button>
     </div>
-    <button class="shorten" type="submit">Shorten</button>
   </div>
