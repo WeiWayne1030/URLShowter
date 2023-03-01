@@ -6,8 +6,8 @@
 
 ## 專案畫面
 
-![image]()
-![image]()
+![image](public/index.png)
+![image](public/result.png)
 
 ## Features - 產品功能
 
