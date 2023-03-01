@@ -5,11 +5,11 @@ const URL = require('../../models/URL')
 
 //完成製作短網址頁面
 router.get('/:name', (req, res) => {
-  const urlname = req.params.name
+  const name = req.params.name
   URL.find()
     .lean()
     .then(url => {
-      const searchResult = url.find(l => l.name === urlname)
+      const searchResult = url.find(url => url.name === name)
       const targetURL = searchResult.originalURL
       res.redirect(targetURL)
     })
