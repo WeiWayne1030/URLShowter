@@ -63,7 +63,7 @@ cd restaurantList
 在 Terminal 輸入 npm install -g nodemon
 ```
 
-6. 5.請自行新增.env 檔案放置與資料庫 MongoDB 連線相關資料
+6. 請自行新增.env 檔案放置與資料庫 MongoDB 連線相關資料
 
 7. 啟動伺服器，輸入執行專案
 
