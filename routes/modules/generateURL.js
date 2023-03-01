@@ -16,6 +16,8 @@ const min = 0
   }
   return results
 }
+
+
   router.post('/', (req, res) => {
   const original = req.body.url       // 從 req.body 拿出表單裡的 url 資料
   if (!original) return //若使用者沒有輸入內容，就按下了送出鈕，需要防止表單送出並提示使用者

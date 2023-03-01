@@ -4,7 +4,7 @@ const router = express.Router()
 const URL = require('../../models/URL')
 
 //完成製作短網址頁面
-router.get('/:url', (req, res) => {
+router.get('/', (req, res) => {
   const urlname = req.params.url
   URL.find()
     .lean()

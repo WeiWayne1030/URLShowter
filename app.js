@@ -15,9 +15,6 @@ app.use(routes)
 require('./config/mongoose')
 
 
-
-
-
 app.listen(port,() => {
   console.log(`Express is running on http://localhost:${port}`)
 })
