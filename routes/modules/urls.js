@@ -13,6 +13,9 @@ router.get('/:name', (req, res) => {
       const targetURL = searchResult.originalURL
       res.redirect(targetURL)
     })
+    .catch(err => {console.log(err)
+          res.render('error',{ error: err.message })
+    })
 })
 
 module.exports = router

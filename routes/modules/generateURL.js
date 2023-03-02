@@ -31,12 +31,14 @@ const min = 0
     }
     const name = generateURL()
     const originalURL = original
-  const shortenURL = `http://localhost:3000/urls/${name}`
+  const shortenURL = `http://localhost:3000/${name}`
   return URL.create({name, shortenURL, originalURL })     // 存入資料庫
     .then(() => res.render('result', { result: shortenURL }))// 新增完成後導回首頁
   })
-    .catch(error => console.log(error))
-})
+    .catch(err => {console.log(err)
+          res.render('error',{ error: err.message })
+    })
+  })
 
 module.exports = router
 
