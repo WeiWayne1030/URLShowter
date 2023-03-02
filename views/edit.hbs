@@ -1,0 +1,14 @@
+<form action="/{{url.name}}?_method=PUT" method="POST">
+  <div class="mt-5 text-center">
+    <input type="url" name="url" required>
+    <a class="text-secondary">
+      <button type="submit" class="btn btn-success" onclick="save()">Save</button>
+    </a>
+    <script>
+      function save() {
+          .then(() => alert("save success!"))
+          .catch(error => console.log(error))
+      }
+    </script>
+  </div>
+</div>

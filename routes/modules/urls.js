@@ -1,4 +1,5 @@
 const express = require('express')
+const { modelNames } = require('mongoose')
 const router = express.Router()
 
 const URL = require('../../models/URL')
@@ -16,6 +17,31 @@ router.get('/:name', (req, res) => {
     .catch(err => {console.log(err)
           res.render('error',{ error: err.message })
     })
+})
+
+//修改shorten
+router.get('/:name/edit', (req, res) => {
+  URL.find()
+    .lean()
+    .then((url) => res.render('edit', {url} ))
+    .catch(err => {
+      console.log(err)
+      res.render(
+      'errorPage', 
+      { error: err.message }
+      )
+    })
+})
+
+router.put('/:name/edit', (req, res) => {
+  const Newurl = req.body.url
+  URL.find()
+    .then(url => {
+      url.originalURL = Newurl
+      return url.save()
+    })
+    .then(()=> res.redirect('/home'))
+    .catch(error => console.log(error))
 })
 
 module.exports = router

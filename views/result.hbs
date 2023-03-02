@@ -4,6 +4,9 @@
     <a id="origin" class="copyText" href="{{result}}">{{result}}</a>
     <div class="mt-2">
       <button class="btn btn-success" onclick="copy()">Copy</button>
+      <a href="{{result}}/edit" class="text-secondary">
+        <button type="submit" class="btn btn-success">edit</button>
+      </a>
         <script>
           function copy() {
               const origin = document.getElementById("origin")
