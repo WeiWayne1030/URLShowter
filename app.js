@@ -18,6 +18,6 @@ app.use(methodOverride('_method'))
 require('./config/mongoose')
 
 
-app.listen(port,() => {
+app.listen(PORT,() => {
   console.log(`Express is running on http://localhost:${PORT}`)
 })
