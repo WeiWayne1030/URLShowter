@@ -2,7 +2,7 @@
 
 一個使用 Node.js + Express 打造的短網址產生器
 
-[Demo Website](http://localhost:3000/)
+[Demo Website](http://localhost:3000/home)
 
 ## 專案畫面
 
@@ -42,7 +42,7 @@ git clone https://github.com/WeiWayne1030/URLShowter.git
 2. 開啟終端機(Terminal)，進入存放此專案的資料夾
 
 ```
-cd restaurantList
+cd URLShowter
 ```
 
 3. 安裝 npm 套件
@@ -74,7 +74,7 @@ cd restaurantList
 8. 當 terminal 出現以下字樣，表示伺服器與資料庫已啟動並成功連結
 
 ```
-Express is listening on http://localhost:3000
+Express is listening on http://localhost:3000/home
 mongodb connected!
 ```
 
