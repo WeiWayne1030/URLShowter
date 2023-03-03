@@ -1,4 +1,5 @@
-<form action="/{{url.name}}?_method=PUT" method="POST">
+<form action="/" method="POST">
+<div>{{url}}</div>
   <div class="mt-5 text-center">
     <input type="url" name="url" required>
     <a class="text-secondary">
@@ -6,8 +7,7 @@
     </a>
     <script>
       function save() {
-          .then(() => alert("save success!"))
-          .catch(error => console.log(error))
+          alert("save success!"))
       }
     </script>
   </div>
