@@ -1,13 +1,13 @@
-<form action="/" method="POST">
-<div>{{url}}</div>
+<form action="/{{shortenURL}}/edit" method="POST">
   <div class="mt-5 text-center">
-    <input type="url" name="url" required>
+    <input type="url" name="url" /required>
     <a class="text-secondary">
       <button type="submit" class="btn btn-success" onclick="save()">Save</button>
     </a>
     <script>
-      function save() {
-          alert("save success!"))
+      function save() { () =>
+        if (true) {alert("save success!")}
+        else {alert("please try agian")}
       }
     </script>
   </div>
