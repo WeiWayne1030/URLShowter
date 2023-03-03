@@ -11,8 +11,8 @@ app.engine('hbs', exphbs({defaultLayout: 'main', extname: '.hbs'}))
 app.set('view engine', 'hbs')
 
 app.use(bodyParser.urlencoded({extended: true }))
-app.use(routes)
 app.use(methodOverride('_method'))
+app.use(routes)
 
 
 require('./config/mongoose')

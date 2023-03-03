@@ -40,7 +40,7 @@ router.get('/:name/edit', (req, res) => {
     })
 })
 
-router.post('/:name/edit', (req, res) => {
+router.put('/:name', (req, res) => {
  let Newurl = req.body.url
 const name = req.params.name
 URL.find()
