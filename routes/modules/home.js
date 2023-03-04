@@ -46,9 +46,8 @@ const name = req.params.name
 URL.find()
      .then(url => {
       let searchResult = url.find(url => url.name === name)
-      let originalURL = searchResult.originalURL
-      originalURL = Newurl
-      searchResult.save(originalURL)
+      searchResult.originalURL = Newurl
+      searchResult.save()
      })
      .then(()=> res.redirect('/'))
      .catch(error => console.log(error))
